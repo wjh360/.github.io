@@ -7,12 +7,8 @@
         padding: 0;
 
         /* background: #000; */
-        background: url('./bg.jpg') no-repeat;
-        background-size: 100%;
-        color: #fff;
-        text-align: center;
-        line-height: 100vh;
-        font-size: 50px;
+        background: url('./bg1.jpg') no-repeat;
+
         /* background: url("image.png") no-repeat; */
 
         height: 100%;
@@ -21,7 +17,7 @@
 
         overflow: hidden;
         background-size: cover;
-        background-size: 100%;
+        /* background-size: 100%; */
     }
 </style>
 
@@ -115,31 +111,31 @@
             loop();
 
             setTimeout(() => {
-                document.querySelector('body').innerHTML = "傻妞！我爱你"
+                document.querySelector('.box').innerHTML = "傻妞！我爱你"
 
                 setTimeout(() => {
-                    document.querySelector('body').innerHTML = "爱你"
+                    document.querySelector('.box').innerHTML = "爱你"
                     setTimeout(() => {
-                        document.querySelector('body').innerHTML = "爱你 我的傻媳妇"
+                        document.querySelector('.box').innerHTML = "爱你 我的傻媳妇"
                         setTimeout(() => {
-                            document.querySelector('body').innerHTML = "你要开心哦"
+                            document.querySelector('.box').innerHTML = "你要开心哦"
                             setTimeout(() => {
-                                document.querySelector('body').innerHTML =
+                                document.querySelector('.box').innerHTML =
                                     "哈哈哈哈哈哈"
                                 setTimeout(() => {
-                                    document.querySelector('body')
+                                    document.querySelector('.box')
                                         .innerHTML =
                                         "傻媳妇？"
                                     setTimeout(() => {
                                         document.querySelector(
-                                                'body')
+                                                '.box')
                                             .innerHTML =
                                             "哈哈哈哈哈哈哈"
-                                        "
+
                                         setTimeout(() => {
                                             document
                                                 .querySelector(
-                                                    'body'
+                                                    '.box'
                                                 )
                                                 .innerHTML =
                                                 "就喜欢看我媳妇笑"
@@ -147,7 +143,7 @@
                                                 () => {
                                                     document
                                                         .querySelector(
-                                                            'body'
+                                                            '.box'
                                                         )
                                                         .innerHTML =
                                                         "傻妞 爱你"
@@ -163,7 +159,7 @@
 
                 }, 1000);
 
-            }, 1000);
+            }, 5000);
         }
 
 
@@ -299,16 +295,30 @@
 
 <body onload="myload()">
 
-    <canvas class="snow"></canvas>
-
+    <canvas class="snow">媳妇</canvas>
+    <div class="box">
+        下雪咯。。。。。
+    </div>
 </body>
-
+<style>
+    .box {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background: rgba(0, 0, 0, 0);
+        top: 0;
+        left: 0;
+        background-size: 100%;
+        color: #fff;
+        text-align: center;
+        line-height: 100vh;
+        font-size: 50px;
+    }
+</style>
 <script src="./jq.js"></script>
 
 <script>
-
-
-
+    // $("body")[0].innerHTML = ''
 </script>
 
 </html>
